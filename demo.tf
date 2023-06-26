@@ -20,5 +20,5 @@ cidr_blocks=["0.0.0.0/0"]
 }
 output "sgid"{
   value=aws_security_group.ec2-sg.id
-locals "port"{
+variable "port"{
 80,443,22}
